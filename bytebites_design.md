@@ -19,6 +19,7 @@ classDiagram
         +list items
         +add_item(item) None
         +filter_by_category(category) list
+        +sort_by_popularity() list
     }
 
     class Order {
