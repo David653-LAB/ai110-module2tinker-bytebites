@@ -47,6 +47,10 @@ class Menu:
                 matches.append(item)
         return matches
 
+    def sort_by_popularity(self):
+        return sorted(self.items, key=lambda item: item.popularity_rating, reverse=True)
+    
+
 
 class Customer:
     """Stores who the customer is and their past orders."""

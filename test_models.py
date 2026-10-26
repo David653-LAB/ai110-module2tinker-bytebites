@@ -40,3 +40,12 @@ customer.add_order(order)
 print(customer.name)
 print(len(customer.purchase_history))
 print(customer.purchase_history[0].calculate_total())
+
+
+print("Sorted by popularity:")
+for item in menu.sort_by_popularity():
+    print(item.name, item.popularity_rating)
+
+print("Original menu order:")
+for item in menu.items:
+    print(item.name, item.popularity_rating)
